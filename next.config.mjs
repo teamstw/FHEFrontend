@@ -1,11 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
-}
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+        crypto: false,
+        module: false,
+      };
+      
+      // สั่งตัดการทำงานของ Prefix node: บนเบราว์เซอร์
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        'node:module': false,
+      };
+    }
 
-export default nextConfig
+    return config;
+  },
+};
+
+export default nextConfig;
