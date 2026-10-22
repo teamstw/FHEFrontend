@@ -8,7 +8,11 @@ export function JobDetails({ state }: { state: JobCollectionState }) {
       {selected && !files && (
         <Panel title={"Detail · " + selected.name}>
           <div>
-            <Badge tone="green">{selected.status} · encrypted result</Badge>
+            <Badge tone={selected.status === "Completed" ? "green" : "cyan"}>
+              {selected.status === "Completed"
+                ? "Completed · encrypted result"
+                : "Processing · encrypted data"}
+            </Badge>
           </div>
           <Rows
             rows={[
@@ -22,7 +26,7 @@ export function JobDetails({ state }: { state: JobCollectionState }) {
             {selected.count} files · encrypted throughout processing. Detail
             shows job status, result metadata, workspace and the required key.
           </p>
-          <div className="cepp-row start wrap">
+          <div className="cepp-row start wrap cepp-job-actions">
             <Button
               disabled={selected.status !== "Completed"}
               onClick={() => setDecrypt(true)}

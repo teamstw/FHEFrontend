@@ -49,7 +49,7 @@ export default function MyGroupsPage() {
           Workspace / {enterprise}
           {" / Groups"}
         </p>
-        <div className="cepp-row start wrap">
+        <div className="cepp-row start wrap cepp-group-toolbar">
           <Badge tone="green">
             Enterprise Owner · {model.name || "Test User"}
           </Badge>

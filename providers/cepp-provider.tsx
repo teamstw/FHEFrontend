@@ -3,6 +3,7 @@ import { api, backendEnabled } from "@/lib/api/cepp";
 import type { Job, Model, Store } from "@/types/cepp";
 import {
   createContext,
+  startTransition,
   useCallback,
   useEffect,
   useState,
@@ -51,17 +52,20 @@ export function CeppProvider({ children }: { children: ReactNode }) {
       setReady(true);
       return;
     }
+    let restored = initial;
     try {
       const data = localStorage.getItem("cepp-ui-v2");
-      if (data) {
-        const restored = { ...initial, ...JSON.parse(data) };
-        setModel(restored);
-        setActiveJobState(
-          restored.jobs.find((j: Job) => j.id === restored.activeJobId) || null,
-        );
-      }
+      if (data) restored = { ...initial, ...JSON.parse(data) };
     } catch {}
-    setReady(true);
+    // Let streamed page boundaries finish hydrating before applying browser data.
+    startTransition(() => {
+      setModel(restored);
+      setActiveJobState(
+        restored.jobs.find((job: Job) => job.id === restored.activeJobId) ||
+          null,
+      );
+      setReady(true);
+    });
   }, []);
   useEffect(() => {
     if (ready && !backendEnabled)

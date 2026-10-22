@@ -39,13 +39,13 @@ app/
   (development)/fhe-test/page.tsx
 components/
   layout/                       # Navbar, page frame and security footer
-  ui/                           # Shared visual primitives and shadcn components
+  ui/                           # Shared CEPP visual primitives
 features/
   jobs/{components,hooks}/     # Reusable job lists, details and collection state
   keys/components/             # Key generation and decryption dialogs
   workspaces/{components,hooks}/ # Group cards, members, dialogs and actions
-hooks/                          # Shared context, API data, mobile and toast hooks
-providers/                      # Application state and theme providers
+hooks/                          # Shared context and API data hooks
+providers/                      # Application state provider
 types/                          # Domain models and API response types
 lib/
   api/client.ts                 # HTTP transport, credentials and API errors
@@ -91,4 +91,4 @@ fixtures used by the shared navbar stay at the bottom of that navbar module.
 
 Run locally with npm run dev. Production validation uses
 npm run build followed by npm run start. The build deliberately
-uses webpack to support the existing OpenFHE WASM module.
+uses webpack for consistency with the existing development setup.

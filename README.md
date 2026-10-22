@@ -15,5 +15,8 @@ Figma fixtures; see [.env.example](.env.example) before connecting a backend.
 - [Folder structure and responsibilities](docs/architecture.md)
 - [Backend integration contracts](docs/backend-integration.md)
 - [Verification and preview reports](docs/verification.md)
+- [Legacy cleanup and recovery notes](docs/cleanup.md)
 
 Build with `npm run build`; serve with `npm run start`.
+
+Check types with `npm run typecheck`.

@@ -8,7 +8,7 @@ All changes are local; no commit or push is performed.
 Run `npm run dev`. Keep `NEXT_PUBLIC_CEPP_API_URL` unset for local previews.
 Mock objects live at the **bottom of each page module** in `app/(site)/**/page.tsx` and `app/(dashboard)/**/page.tsx`.
 Shared state in `providers/cepp-provider.tsx` contains user edits and batch metadata, not secret keys.
-The original OpenFHE WASM experiment is preserved at `/fhe-test`.
+The legacy `/fhe-test` experiment was removed; FHE integration uses the documented backend adapter.
 
 `lib/api/cepp.ts` declares typed requests and proposed endpoint contracts. Set
 `NEXT_PUBLIC_CEPP_API_URL` only after the backend agrees with those contracts.

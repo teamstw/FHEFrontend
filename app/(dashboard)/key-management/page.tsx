@@ -76,7 +76,7 @@ export default function KeysPage() {
       section="Workspace"
       wide
     >
-      <div className="cepp-row wrap">
+      <div className="cepp-row wrap cepp-key-toolbar">
         <div style={{ flex: 1, minWidth: 220 }}>
           <Select
             label="Workspace scope"
@@ -89,26 +89,28 @@ export default function KeysPage() {
             ]}
           />
         </div>
-        <Badge tone="green">Owner · privileged actions enabled</Badge>
-        <Button
-          onClick={() => {
-            setScope(scope);
-            setByok(false);
-            setOpen(true);
-          }}
-        >
-          Generate key
-        </Button>
-        <Button
-          secondary
-          onClick={() => {
-            setScope(scope);
-            setByok(true);
-            setOpen(true);
-          }}
-        >
-          Register BYOK
-        </Button>
+        <div className="cepp-key-actions">
+          <Badge tone="green">Owner · privileged actions enabled</Badge>
+          <Button
+            onClick={() => {
+              setScope(scope);
+              setByok(false);
+              setOpen(true);
+            }}
+          >
+            Generate key
+          </Button>
+          <Button
+            secondary
+            onClick={() => {
+              setScope(scope);
+              setByok(true);
+              setOpen(true);
+            }}
+          >
+            Register BYOK
+          </Button>
+        </div>
       </div>
       <Tabs
         items={["All types", "Local Storage", "Cloud KMS", "BYOK"]}
@@ -118,7 +120,7 @@ export default function KeysPage() {
       {source.error && <p className="cepp-alert">{source.error}</p>}
       <Panel title="Workspace key inventory">
         <div className="cepp-table-wrap">
-          <table className="cepp-table">
+          <table className="cepp-table cepp-key-table">
             <thead>
               <tr>
                 {[
@@ -137,9 +139,10 @@ export default function KeysPage() {
               {filtered.map((k) => (
                 <tr key={k.id}>
                   <td>
-                    {k.name}
-                    <br />
-                    <Badge>{k.method}</Badge>
+                    <div className="cepp-key-identity">
+                      <span className="cepp-key-name">{k.name}</span>
+                      <Badge>{k.method}</Badge>
+                    </div>
                   </td>
                   <td>{masked(k)}</td>
                   <td>

@@ -15,9 +15,9 @@ export function useJobCollection({
   const store = useCepp(),
     router = useRouter(),
     source = useData(files ? api.files : api.jobs, mockJobs);
-  const [tab, setTab] = useState("All"),
-    [search, setSearch] = useState(""),
-    [scope, setScope] = useState("All workspaces"),
+  const [tab, setTabState] = useState("All"),
+    [search, setSearchState] = useState(""),
+    [scope, setScopeState] = useState("All workspaces"),
     [selected, setSelected] = useState<Job | null>(null),
     [decrypt, setDecrypt] = useState(false),
     [view, setView] = useState<Job | null>(null),
@@ -34,6 +34,23 @@ export function useJobCollection({
         .toLowerCase()
         .includes(search.toLowerCase()),
   );
+  const clearSelection = () => {
+    setSelected(null);
+    setDecrypt(false);
+    setView(null);
+  };
+  const setTab = (value: string) => {
+    setTabState(value);
+    clearSelection();
+  };
+  const setSearch = (value: string) => {
+    setSearchState(value);
+    clearSelection();
+  };
+  const setScope = (value: string) => {
+    setScopeState(value);
+    clearSelection();
+  };
   const startDecrypt = (job: Job) => {
     setSelected(job);
     setDecrypt(true);
@@ -49,7 +66,7 @@ export function useJobCollection({
     setSearch,
     scope,
     setScope,
-    selected,
+    selected: filtered.find((job) => job.id === selected?.id) ?? null,
     setSelected,
     decrypt,
     setDecrypt,

@@ -736,6 +736,9 @@
   gap: 24px;
   text-align: center;
 }
+.cepp-result > .cepp-badge {
+  align-self: center;
+}
 .cepp-result h1 {
   font-size: 30px;
 }
@@ -1194,4 +1197,121 @@
   .cepp-profile-toggle > .cepp-icon {
     display: none;
   }
+}
+
+/* Keep workflow actions and metadata aligned across responsive layouts. */
+.cepp-notice-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+.cepp-job-actions {
+  gap: 16px;
+  padding-top: 4px;
+}
+.cepp-member-row {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) 84px 144px;
+  gap: 16px;
+  align-items: center;
+  padding-block: 20px;
+}
+.cepp-member-info {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.cepp-member-role {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cepp-member-role > .cepp-badge,
+.cepp-key-actions > .cepp-badge,
+.cepp-key-identity > .cepp-badge {
+  align-self: center;
+}
+.cepp-member-action {
+  display: flex;
+  justify-content: flex-end;
+}
+.cepp-member-row .cepp-member-action .cepp-button {
+  min-width: 138px;
+  margin-left: 0;
+}
+.cepp-key-toolbar {
+  gap: 16px;
+}
+.cepp-key-table th:first-child,
+.cepp-key-table td:first-child {
+  width: 26%;
+  min-width: 240px;
+}
+.cepp-key-identity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  max-width: 300px;
+  min-width: 0;
+}
+.cepp-key-name {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+  font-weight: 500;
+}
+.cepp-key-identity > .cepp-badge {
+  flex-shrink: 0;
+}
+@media (max-width: 760px) {
+  .cepp-member-row {
+    grid-template-columns: 34px minmax(0, 1fr) auto;
+    gap: 12px;
+  }
+  .cepp-member-action {
+    grid-column: 2 / -1;
+  }
+  .cepp-member-action:empty {
+    display: none;
+  }
+  .cepp-key-toolbar > div:first-child {
+    flex-basis: 100% !important;
+  }
+  .cepp-job-actions > .cepp-button {
+    flex: 1 1 160px;
+  }
+}
+
+.cepp-member-owner > .cepp-member-role {
+  grid-column: 3 / -1;
+  justify-content: flex-end;
+}
+.cepp-member-owner > .cepp-member-action {
+  display: none;
+}
+.cepp-key-toolbar {
+  --cepp-control-height: 50px;
+  align-items: flex-end;
+}
+.cepp-key-toolbar select {
+  height: var(--cepp-control-height);
+}
+.cepp-key-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  min-height: var(--cepp-control-height);
+}
+@media (max-width: 760px) {
+  .cepp-key-actions {
+    width: 100%;
+    gap: 12px;
+  }
+}
+
+.cepp-group-toolbar .cepp-badge {
+  align-self: center;
 }

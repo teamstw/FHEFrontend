@@ -59,11 +59,15 @@ export default function HistoryPage() {
       )}
       <JobList state={state} />
       {filtered.length === 0 && !source.loading && !source.error && (
-        <Notice title={"No jobs found"}>
+        <Notice
+          title="No jobs found"
+          action={
+            <Button secondary onClick={() => router.push("/upload")}>
+              Upload files
+            </Button>
+          }
+        >
           Try another search or upload a new batch.
-          <Button secondary onClick={() => router.push("/upload")}>
-            Upload files
-          </Button>
         </Notice>
       )}
       <JobDetails state={state} />
