@@ -1,0 +1,12 @@
+{
+  "animationDurationMs": 550,
+  "viewports": [
+    320,
+    375,
+    768,
+    1440
+  ],
+  "noReload": true,
+  "reducedMotion": true,
+  "errors": []
+}

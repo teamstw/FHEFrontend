@@ -1,0 +1,16 @@
+[
+  {
+    "method": "Cloud KMS",
+    "mobileModal": "fits",
+    "decryption": "passed",
+    "fixedNavbar": "passed",
+    "errors": []
+  },
+  {
+    "method": "BYOK",
+    "mobileModal": "fits",
+    "decryption": "passed",
+    "fixedNavbar": "passed",
+    "errors": []
+  }
+]

@@ -1,0 +1,294 @@
+{
+  "results": [
+    {
+      "route": "/",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/upload",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/history",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/my-file",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/profile",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/credit-cards",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/billing",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/workspace",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/workspace/enterprise",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/workspace/personal",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/my-group",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/my-group/1",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/my-group/3",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/key-management",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/progress",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/completed",
+      "width": 375,
+      "status": "ok",
+      "scroll": 375
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/upload",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/history",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/my-file",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/profile",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/credit-cards",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/billing",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/workspace",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/workspace/enterprise",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/workspace/personal",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/my-group",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/my-group/1",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/my-group/3",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/key-management",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/progress",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/completed",
+      "width": 768,
+      "status": "ok",
+      "scroll": 768
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/upload",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/history",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/my-file",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/profile",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/credit-cards",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/billing",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/workspace",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/workspace/enterprise",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/workspace/personal",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/my-group",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/my-group/1",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/my-group/3",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/key-management",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/progress",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    },
+    {
+      "route": "/completed",
+      "width": 1440,
+      "status": "ok",
+      "scroll": 1440
+    }
+  ],
+  "errors": [],
+  "consoleErrors": []
+}

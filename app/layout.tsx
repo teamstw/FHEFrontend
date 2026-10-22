@@ -1,48 +1,33 @@
-import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
-// import './globals.css'
+import type { Metadata, Viewport } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+import "@/styles/cepp.css";
+import "./globals.css";
+import Providers from "./providers";
 
+const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
+const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
 export const metadata: Metadata = {
-  title: 'Zero Trust Face Detection | FHE-Powered Secure AI',
-  description: 'Face detection on encrypted data using Fully Homomorphic Encryption (FHE) technology. Process encrypted images without decryption for maximum security.',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
-}
-
+  title: "Zero Trust Face Detection | CEPP",
+  description: "FHE-powered secure face detection workflow.",
+};
 export const viewport: Viewport = {
-  themeColor: '#0a1628',
-}
-
+  themeColor: "#05080b",
+  width: "device-width",
+  initialScale: 1,
+};
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="th">
-      <body className="font-sans antialiased">
-        {children}
-        <Analytics />
+      <body
+        className={`${geist.variable} ${mono.variable} font-sans antialiased`}
+      >
+        <Providers>{children}</Providers>
       </body>
     </html>
-  )
+  );
 }
