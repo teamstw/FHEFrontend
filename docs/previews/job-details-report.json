@@ -1,0 +1,71 @@
+{
+  "checks": [
+    {
+      "width": 375,
+      "name": "History -> completed detail, direct download, decryption dialog, reload",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Processing detail has no result/decrypt action",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Unknown job and return to History",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "My File has no encryption badge and Download works without Decrypt",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "History -> completed detail, direct download, decryption dialog, reload",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Processing detail has no result/decrypt action",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Unknown job and return to History",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "My File has no encryption badge and Download works without Decrypt",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "History -> completed detail, direct download, decryption dialog, reload",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Processing detail has no result/decrypt action",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Unknown job and return to History",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "My File has no encryption badge and Download works without Decrypt",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Local job ID, input files, groups and long names survive reload without overflow",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

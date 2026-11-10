@@ -1,0 +1,405 @@
+{
+  "date": "2026-11-07",
+  "checks": [
+    {
+      "width": 375,
+      "label": "Member group overview",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Member group settings",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Member enterprise permissions and toolbar",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Member cross-scope keys deny",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Member key management",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Member billing",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Member shared files",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Member personal files remain editable",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Admin group overview",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Admin group settings",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Admin enterprise permissions and toolbar",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Admin cross-scope keys deny",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Admin key management",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Admin billing",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Admin shared files",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Admin personal files remain editable",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Owner group overview",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Owner group settings",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Owner enterprise permissions and toolbar",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Owner cross-scope keys deny",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Owner key management",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Owner billing",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Owner shared files",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "label": "Owner personal files remain editable",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Member group overview",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Member group settings",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Member enterprise permissions and toolbar",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Member cross-scope keys deny",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Member key management",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Member billing",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Member shared files",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Member personal files remain editable",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Admin group overview",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Admin group settings",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Admin enterprise permissions and toolbar",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Admin cross-scope keys deny",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Admin key management",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Admin billing",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Admin shared files",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Admin personal files remain editable",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Owner group overview",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Owner group settings",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Owner enterprise permissions and toolbar",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Owner cross-scope keys deny",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Owner key management",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Owner billing",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Owner shared files",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "label": "Owner personal files remain editable",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Member group overview",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Member group settings",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Member enterprise permissions and toolbar",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Member cross-scope keys deny",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Member key management",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Member billing",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Member shared files",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Member personal files remain editable",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Admin group overview",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Admin group settings",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Admin enterprise permissions and toolbar",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Admin cross-scope keys deny",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Admin key management",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Admin billing",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Admin shared files",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Admin personal files remain editable",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Owner group overview",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Owner group settings",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Owner enterprise permissions and toolbar",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Owner cross-scope keys deny",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Owner key management",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Owner billing",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Owner shared files",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "label": "Owner personal files remain editable",
+      "passed": true
+    },
+    {
+      "label": "Member upload gate and group scoping",
+      "passed": true
+    },
+    {
+      "label": "Member cannot edit restricted folder in All workspaces",
+      "passed": true
+    },
+    {
+      "label": "Member unknown direct URL denies edits",
+      "passed": true
+    },
+    {
+      "label": "Admin upload gate and group scoping",
+      "passed": true
+    },
+    {
+      "label": "Admin cannot edit restricted folder in All workspaces",
+      "passed": true
+    },
+    {
+      "label": "Admin unknown direct URL denies edits",
+      "passed": true
+    },
+    {
+      "label": "Owner upload gate and group scoping",
+      "passed": true
+    },
+    {
+      "label": "Owner cannot edit restricted folder in All workspaces",
+      "passed": true
+    },
+    {
+      "label": "Owner unknown direct URL denies edits",
+      "passed": true
+    },
+    {
+      "label": "Unauthenticated direct Group URL denies edits",
+      "passed": true
+    }
+  ]
+}

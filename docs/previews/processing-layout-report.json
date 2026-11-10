@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "width": 375,
+      "name": "Reference layout centered, completed preview 100%, no horizontal overflow",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Reference layout centered, completed preview 100%, no horizontal overflow",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Reference layout centered, completed preview 100%, no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Active progress reaches 100%, retains metadata/new artifact and redirects; reduced motion supported",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

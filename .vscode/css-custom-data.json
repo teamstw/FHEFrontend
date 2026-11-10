@@ -12,6 +12,10 @@
     {
       "name": "@apply",
       "description": "Applies existing Tailwind utility classes to a CSS rule."
+    },
+    {
+      "name": "@source",
+      "description": "Registers source files for Tailwind CSS utility detection."
     }
   ]
 }

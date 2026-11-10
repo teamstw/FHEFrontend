@@ -1,0 +1,51 @@
+{
+  "checks": [
+    {
+      "width": 375,
+      "name": "Own Enterprise membership checkboxes and personal payer; equal allocation sums exactly with cents",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Split persists per context/reload and survives plan change; Personal has no group payers",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Removed memberships excluded from saved allocation and empty selection cannot save",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Own Enterprise membership checkboxes and personal payer; equal allocation sums exactly with cents",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Split persists per context/reload and survives plan change; Personal has no group payers",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Removed memberships excluded from saved allocation and empty selection cannot save",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Own Enterprise membership checkboxes and personal payer; equal allocation sums exactly with cents",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Split persists per context/reload and survives plan change; Personal has no group payers",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Removed memberships excluded from saved allocation and empty selection cannot save",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

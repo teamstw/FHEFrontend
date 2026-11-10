@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "width": 375,
+      "name": "Decrypted: no badge, View/Download; encrypted: badge, View/Decrypt; processing: View only",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Wrong key leaves encrypted state; valid key switches to Download and survives reload",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Decrypted: no badge, View/Download; encrypted: badge, View/Decrypt; processing: View only",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Wrong key leaves encrypted state; valid key switches to Download and survives reload",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Decrypted: no badge, View/Download; encrypted: badge, View/Decrypt; processing: View only",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Wrong key leaves encrypted state; valid key switches to Download and survives reload",
+      "passed": true
+    },
+    {
+      "route": "/completed",
+      "name": "Successful decryption is reflected in My File across pages",
+      "passed": true
+    },
+    {
+      "route": "/history/ENCRYPTED-TEST",
+      "name": "Successful decryption is reflected in My File across pages",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

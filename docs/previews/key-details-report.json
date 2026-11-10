@@ -1,0 +1,274 @@
+{
+  "checks": [
+    {
+      "width": 375,
+      "role": "Owner",
+      "label": "Inventory View on every key; details removed from main",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "Owner",
+      "label": "Local detail and restore validation belong to selected key",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "Owner",
+      "label": "Cloud detail, actions and bindings isolated to selected key",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "Owner",
+      "label": "BYOK selected-key detail and existing registration flow",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "Owner",
+      "label": "Scope switch resets selection; responsive layout and no client errors",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "Admin",
+      "label": "Inventory View on every key; details removed from main",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "Admin",
+      "label": "Local detail and restore validation belong to selected key",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "Admin",
+      "label": "Cloud detail, actions and bindings isolated to selected key",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "Admin",
+      "label": "BYOK selected-key detail and existing registration flow",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "Admin",
+      "label": "Scope switch resets selection; responsive layout and no client errors",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "Member",
+      "label": "Inventory View on every key; details removed from main",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "Member",
+      "label": "Local detail and restore validation belong to selected key",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "Member",
+      "label": "Cloud detail, actions and bindings isolated to selected key",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "Member",
+      "label": "BYOK selected-key detail and existing registration flow",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "Member",
+      "label": "Scope switch resets selection; responsive layout and no client errors",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Owner",
+      "label": "Inventory View on every key; details removed from main",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Owner",
+      "label": "Local detail and restore validation belong to selected key",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Owner",
+      "label": "Cloud detail, actions and bindings isolated to selected key",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Owner",
+      "label": "BYOK selected-key detail and existing registration flow",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Owner",
+      "label": "Scope switch resets selection; responsive layout and no client errors",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Admin",
+      "label": "Inventory View on every key; details removed from main",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Admin",
+      "label": "Local detail and restore validation belong to selected key",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Admin",
+      "label": "Cloud detail, actions and bindings isolated to selected key",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Admin",
+      "label": "BYOK selected-key detail and existing registration flow",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Admin",
+      "label": "Scope switch resets selection; responsive layout and no client errors",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Member",
+      "label": "Inventory View on every key; details removed from main",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Member",
+      "label": "Local detail and restore validation belong to selected key",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Member",
+      "label": "Cloud detail, actions and bindings isolated to selected key",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Member",
+      "label": "BYOK selected-key detail and existing registration flow",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "Member",
+      "label": "Scope switch resets selection; responsive layout and no client errors",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Owner",
+      "label": "Inventory View on every key; details removed from main",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Owner",
+      "label": "Local detail and restore validation belong to selected key",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Owner",
+      "label": "Cloud detail, actions and bindings isolated to selected key",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Owner",
+      "label": "BYOK selected-key detail and existing registration flow",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Owner",
+      "label": "Scope switch resets selection; responsive layout and no client errors",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Admin",
+      "label": "Inventory View on every key; details removed from main",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Admin",
+      "label": "Local detail and restore validation belong to selected key",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Admin",
+      "label": "Cloud detail, actions and bindings isolated to selected key",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Admin",
+      "label": "BYOK selected-key detail and existing registration flow",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Admin",
+      "label": "Scope switch resets selection; responsive layout and no client errors",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Member",
+      "label": "Inventory View on every key; details removed from main",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Member",
+      "label": "Local detail and restore validation belong to selected key",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Member",
+      "label": "Cloud detail, actions and bindings isolated to selected key",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Member",
+      "label": "BYOK selected-key detail and existing registration flow",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "Member",
+      "label": "Scope switch resets selection; responsive layout and no client errors",
+      "passed": true
+    }
+  ]
+}

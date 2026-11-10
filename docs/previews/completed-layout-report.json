@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "width": 375,
+      "name": "Centered completed/decrypted layouts, Cancel, successful key validation, download, reload and My File",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Centered completed/decrypted layouts, Cancel, successful key validation, download, reload and My File",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Centered completed/decrypted layouts, Cancel, successful key validation, download, reload and My File",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

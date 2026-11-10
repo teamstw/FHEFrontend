@@ -1,0 +1,60 @@
+{
+  "checks": [
+    {
+      "width": 375,
+      "role": "owner",
+      "name": "Authorized save updates name, description and share; reload restores all fields",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "admin",
+      "name": "Authorized save updates name, description and share; reload restores all fields",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "role": "member",
+      "name": "Current account row matches Member role; readonly form explains restrictions without privilege escalation",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "owner",
+      "name": "Authorized save updates name, description and share; reload restores all fields",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "admin",
+      "name": "Authorized save updates name, description and share; reload restores all fields",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "role": "member",
+      "name": "Current account row matches Member role; readonly form explains restrictions without privilege escalation",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "owner",
+      "name": "Authorized save updates name, description and share; reload restores all fields",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "admin",
+      "name": "Authorized save updates name, description and share; reload restores all fields",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "role": "member",
+      "name": "Current account row matches Member role; readonly form explains restrictions without privilege escalation",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

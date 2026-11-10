@@ -1,0 +1,71 @@
+{
+  "checks": [
+    {
+      "width": 375,
+      "name": "Two sections, processing hidden, original and completed result separation",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Nested folder creation, duplicate validation, original upload and bytes persist after reload",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Move originals and results within same workspace folders",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Search and workspace isolation across both sections",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Two sections, processing hidden, original and completed result separation",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Nested folder creation, duplicate validation, original upload and bytes persist after reload",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Move originals and results within same workspace folders",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Search and workspace isolation across both sections",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Two sections, processing hidden, original and completed result separation",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Nested folder creation, duplicate validation, original upload and bytes persist after reload",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Move originals and results within same workspace folders",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Search and workspace isolation across both sections",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Reprocessing source twice creates independent results, preserves source and leaves pending jobs in History",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

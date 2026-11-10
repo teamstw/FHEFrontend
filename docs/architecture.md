@@ -1,94 +1,138 @@
-# Frontend architecture
+# โครงสร้าง Frontend
 
-The application uses the Next.js App Router. Every screen is implemented in its
-own page.tsx; layouts own the shared application frame. There is no catch-all page
-or client component that switches screens based on the pathname.
+ใช้ Next.js App Router โดยเก็บ source code ใน src/ ส่วน public/, docs/ และไฟล์ตั้งค่าอยู่ที่ root
+หน้าของเว็บไซต์อยู่ใน src/app/ และมี UI ของหน้านั้นใน page.tsx โดยตรง
 
 ```text
-app/
-  layout.tsx                    # HTML, fonts, metadata and root providers
-  providers.tsx                 # Client provider composition
-  globals.css                   # Tailwind and global base styles
-  (site)/                       # Home and public information pages
-    layout.tsx                  # Shared navbar, with Home anchor navigation
-    page.tsx                    # Home
-    documentation/page.tsx
-    contact/page.tsx
-    privacy/page.tsx
-    terms/page.tsx
-  (dashboard)/                  # Workflow, account and workspace pages
-    layout.tsx                  # Shared navbar and Suspense boundary
-    upload/page.tsx
-    progress/page.tsx
-    completed/page.tsx
-    history/page.tsx
-    my-file/page.tsx
-    key-management/page.tsx
-    profile/page.tsx
-    credit-cards/page.tsx
-    billing/page.tsx
-    notifications/page.tsx
-    workspace/page.tsx
-    workspace/personal/page.tsx
-    workspace/enterprise/page.tsx
-    my-group/page.tsx
-    my-group/[groupId]/page.tsx  # Native dynamic route
-    payment/page.tsx            # Compatibility redirect
-    my-credit-card/page.tsx     # Compatibility redirect
-    manage-account/page.tsx     # Compatibility redirect
-  (development)/fhe-test/page.tsx
-components/
-  layout/                       # Navbar, page frame and security footer
-  ui/                           # Shared CEPP visual primitives
-features/
-  jobs/{components,hooks}/     # Reusable job lists, details and collection state
-  keys/components/             # Key generation and decryption dialogs
-  workspaces/{components,hooks}/ # Group cards, members, dialogs and actions
-hooks/                          # Shared context and API data hooks
-providers/                      # Application state provider
-types/                          # Domain models and API response types
-lib/
-  api/client.ts                 # HTTP transport, credentials and API errors
-  api/cepp.ts                   # Typed endpoint methods
-  fhe/                          # Original OpenFHE JS/WASM companion files
-  download.ts                   # Browser downloads
-  keys.ts                       # Key metadata and fingerprint helpers
-  utils.ts                      # Generic utility functions
-styles/cepp.css                 # Shared CEPP design and responsive rules
-public/figma/                   # Design assets
-docs/                           # Architecture, backend contracts and QA evidence
+FHEFrontend/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx                         # HTML, fonts, metadata, providers
+│   │   ├── (public)/                         # หน้าสาธารณะ
+│   │   │   ├── layout.tsx                     # Navbar พร้อม Home anchors
+│   │   │   ├── page.tsx                       # Home
+│   │   │   ├── contact/page.tsx
+│   │   │   ├── documentation/page.tsx
+│   │   │   ├── privacy/page.tsx
+│   │   │   └── terms/page.tsx
+│   │   ├── (application)/                    # หน้าการใช้งานและจัดการบัญชี
+│   │   │   ├── layout.tsx                     # Navbar และ Suspense
+│   │   │   ├── (processing)/                 # ขั้นตอนประมวลผลไฟล์
+│   │   │   │   ├── choose-workspace/page.tsx
+│   │   │   │   ├── upload/page.tsx
+│   │   │   │   ├── progress/page.tsx
+│   │   │   │   └── completed/page.tsx
+│   │   │   ├── (account)/                    # ข้อมูลและรายการของผู้ใช้
+│   │   │   │   ├── history/page.tsx
+│   │   │   │   ├── history/[jobId]/page.tsx  # รายละเอียดงานจาก History
+│   │   │   │   ├── my-file/page.tsx
+│   │   │   │   ├── profile/page.tsx
+│   │   │   │   ├── credit-cards/page.tsx
+│   │   │   │   ├── billing/page.tsx
+│   │   │   │   └── notifications/page.tsx
+│   │   │   ├── (workspace-management)/       # Workspace, กลุ่ม, สมาชิกและ Key
+│   │   │   │   ├── workspace/page.tsx
+│   │   │   │   ├── workspace/personal/page.tsx
+│   │   │   │   ├── workspace/enterprise/page.tsx
+│   │   │   │   ├── my-group/page.tsx
+│   │   │   │   ├── my-group/[groupId]/page.tsx
+│   │   │   │   └── key-management/page.tsx
+│   │   │   └── (redirects)/                  # รองรับลิงก์เก่า
+│   │   │       ├── manage-account/page.tsx
+│   │   │       ├── my-credit-card/page.tsx
+│   │   │       └── payment/page.tsx
+│   │   └── api/auth/[...nextauth]/route.ts   # NextAuth / Google OAuth
+│   ├── components/
+│   │   ├── layout/                          # Navbar, PageShell, SecurityFooter
+│   │   └── ui/                              # UI กลาง แยกหนึ่งหน้าที่ต่อไฟล์
+│   │       ├── app-icon.tsx
+│   │       ├── badge.tsx
+│   │       ├── button.tsx
+│   │       ├── checkbox.tsx
+│   │       ├── detail-rows.tsx
+│   │       ├── modal.tsx
+│   │       ├── notice.tsx
+│   │       ├── panel.tsx
+│   │       ├── select.tsx
+│   │       ├── tabs.tsx
+│   │       ├── text-field.tsx
+│   │       └── user-avatar.tsx
+│   ├── features/
+│   │   ├── files/{components,hooks}/        # Original files, folders, library actions
+│   │   ├── jobs/{components,hooks}/         # รายการงาน, รายละเอียด, ขั้นตอน
+│   │   ├── keys/components/                 # สร้าง Key และถอดรหัส
+│   │   └── workspaces/{components,hooks}/   # กลุ่ม, สมาชิก, การเลือกและจัดการ
+│   ├── hooks/
+│   │   ├── use-api-data.ts                  # useApiData: โหลด backend หรือ fixtures
+│   │   └── use-app-state.ts                 # useAppState: อ่าน/แก้ shared state
+│   ├── providers/
+│   │   ├── app-providers.tsx                # SessionProvider, state, toast
+│   │   └── app-state-provider.tsx           # Shared state และ browser persistence
+│   ├── lib/
+│   │   ├── api/
+│   │   │   ├── backend-api.ts               # Typed backend endpoints
+│   │   │   └── http-client.ts               # URL, fetch, cookies, API errors
+│   │   ├── avatar-image.ts                  # ตรวจ/ย่อรูปและเก็บ avatar
+│   │   ├── file-download.ts                 # ดาวน์โหลดผ่าน browser
+│   │   ├── group-membership.ts              # Enterprise affiliation ของกลุ่ม
+│   │   ├── key-metadata.ts                  # Mask key ID และ fingerprint
+│   │   └── save-feedback.ts                 # ข้อความหลังบันทึก
+│   ├── styles/
+│   │   ├── globals.css                      # Tailwind, tokens, base styles
+│   │   └── application.css                  # CEPP UI และ responsive rules
+│   └── types/
+│       ├── app-state.ts                     # AppState และ AppStore
+│       ├── billing.ts                       # บัตร, การเรียกเก็บเงิน
+│       ├── file-storage.ts                  # Original file และ Folder contracts
+│       ├── job.ts                           # งานประมวลผล
+│       ├── key.ts                           # Key และวิธีจัดเก็บ
+│       ├── notification.ts                  # การแจ้งเตือน
+│       ├── workspace.ts                     # Workspace, Group, Member
+│       └── styles.d.ts                      # Type declaration ของ CSS import
+├── public/figma/                            # Assets จาก Figma
+├── docs/                                    # คู่มือและผลตรวจ
+├── .env.example                             # ตัวอย่าง environment
+├── .env.local                               # ค่า local รวม OAuth (ไม่ commit)
+├── next.config.mjs
+├── postcss.config.mjs
+├── tsconfig.json
+├── package.json
+└── package-lock.json
 ```
 
-Parenthesized route groups organize source files without changing URLs. For
-example, app/(dashboard)/upload/page.tsx still serves /upload. Unknown paths use
-Next.js's 404 behavior. /payment and /my-credit-card redirect to /credit-cards;
-/manage-account redirects to /profile.
+## กติกาการตั้งชื่อและแบ่งหน้าที่
 
-## Responsibilities
+- ชื่อไฟล์ทั่วไปใช้ kebab-case เช่น user-avatar.tsx และ use-app-state.ts
+- React components ใช้ PascalCase เช่น PageShell และ KeyGenerationDialog
+- Hooks ขึ้นต้นด้วย use เช่น useApiData และ useWorkspaceManagement
+- page.tsx, layout.tsx และ route.ts เป็นชื่อพิเศษของ Next.js จึงคงชื่อนี้
+- โฟลเดอร์ในวงเล็บเป็น route group ไม่ปรากฏใน URL เช่น
+  src/app/(application)/(processing)/upload/page.tsx ให้บริการที่ /upload
+- ชื่อ route เดิม เช่น my-file และ my-group คงไว้เพื่อให้ลิงก์เดิมและ dynamic
+  group URL ทำงานต่อ ไม่ได้สร้างหน้า Dashboard หรือ route /dashboard
+- Route groups ใช้จัดไฟล์เท่านั้น ไม่ใช่ระบบตรวจสิทธิ์; OAuth ยังใช้ NextAuth เดิม
+- @/ ชี้ไปที่ src/ เช่น @/components/ui/button
 
-- Pages own the screen markup, page-specific interactions and fixtures at the
-  bottom of that page's module. They compose reusable fragments from features.
-- Layouts own the navbar, so it renders once and persists between sibling routes.
-  The root provider retains state across route groups.
-- Components contain shared presentation, rather than complete route screens.
-- Features contain reusable domain behavior. Hooks accept fixtures from the page;
-  API modules never import mock data or UI components.
-- Types do not depend on React providers. The HTTP client is separate from typed
-  endpoint declarations and from the in-memory/localStorage state provider.
+## เพิ่มหรือแก้หน้าอย่างไร
 
-Client components are used where hooks, browser APIs or interactions are needed.
-Static informational pages and compatibility redirects remain server components.
-Mock data is active only while NEXT_PUBLIC_CEPP_API_URL is unset. Notification
-fixtures used by the shared navbar stay at the bottom of that navbar module.
+1. เลือกหมวดใน src/app/ ตามหน้าที่ แล้วสร้างชื่อ-route/page.tsx
+2. เขียน UI และ interaction ของหน้านั้นใน page.tsx เก็บ mock ไว้ท้ายไฟล์นั้น
+3. UI ที่ใช้ซ้ำทั่วไปอยู่ components/ui/; UI หรือ hooks เฉพาะงานที่ใช้ซ้ำอยู่ features/
+4. เพิ่มชนิดข้อมูลใน src/types/ ตาม domain และ endpoint ใน src/lib/api/backend-api.ts
+5. ตรวจด้วย npm run typecheck และ npm run build แล้วลอง flow ที่เกี่ยวข้อง
 
-## Adding a page
+ไม่สร้างไฟล์ loading.tsx, error.tsx, not-found.tsx, db.ts หรือ tailwind.config.ts
+เปล่า ๆ เพียงให้เหมือนภาพตัวอย่าง โครงการใช้ Suspense และ 404 ของ Next.js อยู่แล้ว
+และใช้ Tailwind 4 ผ่าน PostCSS ซึ่งตั้งค่าใน CSS ได้
 
-1. Add app/(site)/your-route/page.tsx or app/(dashboard)/your-route/page.tsx.
-2. Put the screen there. Extract only reusable UI or behavior into components or
-   the relevant feature. Keep page fixtures below the page export.
-3. Add domain types in types/ and endpoint methods in lib/api/cepp.ts as needed.
-4. Run npm run build and check the page on mobile and desktop.
+## สิ่งที่คงไว้ในการจัดโครงสร้าง
 
-Run locally with npm run dev. Production validation uses
-npm run build followed by npm run start. The build deliberately
-uses webpack for consistency with the existing development setup.
+URL เดิมทั้ง 24 หน้ายังเดิม และเพิ่ม /history/[jobId] สำหรับรายละเอียดงาน รวม redirect /payment และ /my-credit-card ไป /credit-cards
+และ /manage-account ไป /profile พร้อม Google OAuth callback /api/auth/callback/google
+ค่า environment, browser storage keys, สัญญา backend, page-local fixtures และไฟล์ assets
+คงเดิม การย้ายโครงสร้างไม่ได้ commit หรือ push
+
+หากมี dev server เปิดอยู่ก่อนย้ายไฟล์ ให้ปิด instance เดิมแล้วรัน npm run dev ใหม่
+หลังย้าย root app/ เป็น src/app/ เพื่อให้ Next.js ตรวจพบตำแหน่งใหม่
+
+My File storage and folder behavior: [file-library.md](file-library.md).

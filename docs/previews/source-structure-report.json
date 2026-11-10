@@ -1,0 +1,731 @@
+{
+  "routeChecks": [
+    {
+      "width": 375,
+      "route": "/",
+      "actual": "/",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/billing",
+      "actual": "/billing",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/choose-workspace",
+      "actual": "/choose-workspace",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/completed",
+      "actual": "/completed",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/contact",
+      "actual": "/contact",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/credit-cards",
+      "actual": "/credit-cards",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/documentation",
+      "actual": "/documentation",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/history",
+      "actual": "/history",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/key-management",
+      "actual": "/key-management",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/manage-account",
+      "actual": "/profile",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/my-credit-card",
+      "actual": "/credit-cards",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/my-file",
+      "actual": "/my-file",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/my-group",
+      "actual": "/my-group",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/my-group/1",
+      "actual": "/my-group/1",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/notifications",
+      "actual": "/notifications",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/payment",
+      "actual": "/credit-cards",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/privacy",
+      "actual": "/privacy",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/profile",
+      "actual": "/profile",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/progress",
+      "actual": "/progress",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/terms",
+      "actual": "/terms",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/upload",
+      "actual": "/choose-workspace",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/workspace",
+      "actual": "/workspace",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/workspace/enterprise",
+      "actual": "/workspace/enterprise",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 375,
+      "route": "/workspace/personal",
+      "actual": "/workspace/personal",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "actual": "/",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/billing",
+      "actual": "/billing",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/choose-workspace",
+      "actual": "/choose-workspace",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/completed",
+      "actual": "/completed",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/contact",
+      "actual": "/contact",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/credit-cards",
+      "actual": "/credit-cards",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/documentation",
+      "actual": "/documentation",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/history",
+      "actual": "/history",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/key-management",
+      "actual": "/key-management",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/manage-account",
+      "actual": "/profile",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/my-credit-card",
+      "actual": "/credit-cards",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/my-file",
+      "actual": "/my-file",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/my-group",
+      "actual": "/my-group",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/my-group/1",
+      "actual": "/my-group/1",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/notifications",
+      "actual": "/notifications",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/payment",
+      "actual": "/credit-cards",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/privacy",
+      "actual": "/privacy",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/profile",
+      "actual": "/profile",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/progress",
+      "actual": "/progress",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/terms",
+      "actual": "/terms",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/upload",
+      "actual": "/choose-workspace",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/workspace",
+      "actual": "/workspace",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/workspace/enterprise",
+      "actual": "/workspace/enterprise",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 768,
+      "route": "/workspace/personal",
+      "actual": "/workspace/personal",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "actual": "/",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/billing",
+      "actual": "/billing",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/choose-workspace",
+      "actual": "/choose-workspace",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/completed",
+      "actual": "/completed",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/contact",
+      "actual": "/contact",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/credit-cards",
+      "actual": "/credit-cards",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/documentation",
+      "actual": "/documentation",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/history",
+      "actual": "/history",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/key-management",
+      "actual": "/key-management",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/manage-account",
+      "actual": "/profile",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/my-credit-card",
+      "actual": "/credit-cards",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/my-file",
+      "actual": "/my-file",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/my-group",
+      "actual": "/my-group",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/my-group/1",
+      "actual": "/my-group/1",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/notifications",
+      "actual": "/notifications",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/payment",
+      "actual": "/credit-cards",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/privacy",
+      "actual": "/privacy",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/profile",
+      "actual": "/profile",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/progress",
+      "actual": "/progress",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/terms",
+      "actual": "/terms",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/upload",
+      "actual": "/choose-workspace",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/workspace",
+      "actual": "/workspace",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/workspace/enterprise",
+      "actual": "/workspace/enterprise",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    },
+    {
+      "width": 1440,
+      "route": "/workspace/personal",
+      "actual": "/workspace/personal",
+      "overflow": false,
+      "nav": 1,
+      "broken": [],
+      "background": "oklch(0.13 0.01 240)"
+    }
+  ],
+  "flows": [
+    {
+      "width": 375,
+      "name": "Enterprise multi-group selection and key dialog",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Personal upload has no group selector",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Google avatar default, custom upload and reload persistence",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Dynamic group detail across enterprises",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Authenticated Get Started reaches workspace chooser",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Enterprise multi-group selection and key dialog",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Personal upload has no group selector",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Google avatar default, custom upload and reload persistence",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Dynamic group detail across enterprises",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Authenticated Get Started reaches workspace chooser",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Enterprise multi-group selection and key dialog",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Personal upload has no group selector",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Google avatar default, custom upload and reload persistence",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Dynamic group detail across enterprises",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Authenticated Get Started reaches workspace chooser",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

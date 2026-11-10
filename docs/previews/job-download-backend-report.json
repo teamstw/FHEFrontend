@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "Backend list and detail override stale local metadata",
+    "404 has no fixture fallback",
+    "Authorization failure",
+    "Mismatched backend job ID rejected",
+    "Failed detail request can retry",
+    "Encoded route ID reaches correct backend endpoint",
+    "Processing status refresh enables completed actions",
+    "Direct ciphertext download, failed request retry, no Decrypt required"
+  ],
+  "errors": [],
+  "passed": true
+}

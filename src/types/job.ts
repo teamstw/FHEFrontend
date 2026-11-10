@@ -1,0 +1,21 @@
+export type Job = {
+  progress?: number;
+  folderId?: string | null;
+  sourceFileIds?: string[];
+  resultFileId?: string;
+  decrypted?: boolean;
+  groupIds?: string[];
+  groupNames?: string[];
+  id: string;
+  name: string;
+  files: string[];
+  count: number;
+  size: string;
+  scope: string;
+  keyId: string;
+  version: number;
+  status: "Completed" | "Processing";
+  date: string;
+  result: string;
+  demo: boolean;
+};

@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "Backend inventory and errors are authoritative; Processing never renders in My File",
+    "Folder creation and original upload send workspace/folder metadata",
+    "Original downloads use stored-file URL; move is restricted to the same workspace",
+    "Result folders use independent result file IDs rather than changing job/source IDs",
+    "Stored-source FHE sends IDs without reuploading bytes and creates a separate result record",
+    "FHE result Decrypt -> Download flow remains intact"
+  ],
+  "errors": [],
+  "passed": true
+}

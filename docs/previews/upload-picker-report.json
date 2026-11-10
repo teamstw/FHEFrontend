@@ -1,0 +1,51 @@
+{
+  "checks": [
+    {
+      "width": 375,
+      "name": "Picker excludes FHE results, unsupported/empty files and other workspaces; Cancel preserves batch",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Multi-select across filters, preserve device file, prevent duplicates, Remove/Clear both input types",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "name": "Only explicitly matching Enterprise groups are selectable; switch clears old groups and filters file sources",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Picker excludes FHE results, unsupported/empty files and other workspaces; Cancel preserves batch",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Multi-select across filters, preserve device file, prevent duplicates, Remove/Clear both input types",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "name": "Only explicitly matching Enterprise groups are selectable; switch clears old groups and filters file sources",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Picker excludes FHE results, unsupported/empty files and other workspaces; Cancel preserves batch",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Multi-select across filters, preserve device file, prevent duplicates, Remove/Clear both input types",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "name": "Only explicitly matching Enterprise groups are selectable; switch clears old groups and filters file sources",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}
